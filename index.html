@@ -1,53 +1,145 @@
 <!DOCTYPE html>
 <!--Created by Danielle Berry , November 18 2025-->
-
-
-
-<!--
-colours
-background: #fff6d9 (light yellow)
-nav bar: #3a240c (dark brown)
-header: #f55a5a (red)
-greens: #cdf0b4
--->
-
 <html lang="EN-CA">
-  
-  <head>
-  <title>website title</title>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Oi&family=Onest:wght@100..900&display=swap" rel="stylesheet"> 
-    
-  <style>
-    body {
-      background-color: #fff6d9;
-    }
-    
-    h1 {
-      font-family: "Oi", sans-serif;
-    }
-    
-    h2 {
-      font-family: "BBH Sans Hegarty", sans-serif;
-    }
-    
-    h3{
-      font-family: "BBH Sans Hegarty", sans-serif;
-    }
-    
-    p {
-      font-family: "Onset", sans-serif;
-    }
-    </style>
-  </head>
-  
-  <body>
+<head>
+<title>website title</title>
+
+<link rel="preconnect" href="<https://fonts.googleapis.com>">
+<link rel="preconnect" href="<https://fonts.gstatic.com>" crossorigin>
+<link href="<https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Kablammo:MORF@0..60&family=Oi&family=Onest:wght@100..900&display=swap>" rel="stylesheet">
+
+<style>
+  html {
+    width: 1440px;
+    height: auto;
+    /* Allow height to adjust based on content */
+    margin: 0;
+    color: #3a240c;
+    text-align: center;
+    /* Center text for the body */
+  }
+
+  body {
+    width: 1200px;
+    background-color: #fff6d9;
+    font-family: Onest, sans-serif;
+    font-size: 20px;
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+  }
+
+  h1 {
+    font-family: Oi, Serif;
+  }
+
+  .siteBanner {
+    background-color: #f55a5a;
+    width: 100%;
+    /* Use full width */
+    height: 120px;
+  }
+  .siteBanner img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    /* Center image */
+  }
+
+  .siteNavBar {
+    height: 50px;
+    line-height: 3px;
+    /* Use full width */
+    background-color: #3a240c;
+    color: #fff6d9;
+    padding: 0;
+  }
+  .siteNavBar ul {
+    list-style-type: none;
+    font-family: "BB Sans Hegarty", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    /* Center the items horizontally */
+    align-items: center;
+    /* Center items vertically */
+  }
+  .siteNavBar li {
+    padding-right: 35px;
+  }
+  .siteNavBar li:last-child {
+    padding-right: 0;
+  }
+
+  .welcomeContainer {
+    position: relative;
+    text-align: center;
+    color: #fff6d9;
+    padding-top: 50px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Oi, sans-serif;
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .homeText {
+    flex: 1;
+    /* Allow this div to take up remaining space -- CoPilot*/
+  }
+
+  .homeText img {
+    padding-top: 30px;
+  }
+
+  .siteFooter {
+    height: 100px;
+    width: 100%;
+    /* Use full width */
+    background-color: #3a240c;
+    color: #fff6d9;
+    padding: 20px 0;
+    /* Add padding for content */
+  }
+</style>
+
+</head>
+
+<body>
+<div class="siteBanner">
+<img src="AdobeStock_apple_logo.jpeg" alt="the inside of an apple cut vertically down the middle. the peel is red, there are two seeds and one brown stem. the apple seems to have been drawn with crayon or oil pastels" width="3100">
+</div>
+
+<div class="siteNavBar">
+  <ul>
+    <li>about</li>
+    <li>home</li>
+    <li>reviews</li>
+  </ul>
+</div>
+
+<div class="welcomeContainer">
+  <img src="pinterestApples.jpg" alt="description of image" width="500px"></img>
+  <div class="centered">☆ WELCOME ☆</div>
+</div>
+
+<div>
+  <p><b>hi!! my name is danielle</b></p>
   <p>
-    pee pee poo poo
-    </p>
-  </body>
-  
-  
+    if you've ever wondered, <i>which apple juice should I get? </i> then you've landed in the right place
+  </p>
+  <p style="font-size: 15px">maybe idk</p>
+</div>
+
+<div class="siteFooter">
+  <p>pee pee</p>
+</div>
+
+</body>
 </html>
