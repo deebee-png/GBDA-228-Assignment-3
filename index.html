@@ -17,7 +17,7 @@ Date retrieved: [date]
 <link rel="preconnect" href="<https://fonts.googleapis.com>">
 <link rel="preconnect" href="<https://fonts.gstatic.com>" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Kablammo:MORF@0..60&family=Oi&family=Onest:wght@100..900&display=swap" rel="stylesheet">
-
+                                                    
 <style>
   html {
     width: 1440px;
@@ -124,6 +124,15 @@ Date retrieved: Nov 25
     padding-top: 30px;
   }
 
+  
+  
+  .containerMRR {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 22% 33%;
+    padding: 20px, 0px, 40px;
+  }
+  
   .buttonSeeWhy {
    background-color: #372510;
   color: #FDF6DC;
@@ -161,15 +170,19 @@ Date retrieved: Nov 25
 </head>
 
 <body>
+  <audio id="clickSound" src="slurp.mp3" preload="auto"></audio>
+
+
+  
 <div class="siteBanner">
 <img src="AdobeStock_apple_logo.jpeg" alt="the inside of an apple cut vertically down the middle. the peel is red, there are two seeds and one brown stem. the apple seems to have been drawn with crayon or oil pastels" width="3100">
 </div>
 
 <div class="siteNavBar">
   <ul>
-    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">about</a></li>
-  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">home</a></li>
-  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">reviews</a></li>
+    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">about</a></li>
+  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">home</a></li>
+  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">reviews</a></li>
   </ul>
 </div>
 
@@ -181,22 +194,48 @@ Date retrieved: Nov 25
 <div>
   <h2>my name is danielle :D</h2>
   <p>
-    if you've ever wondered, <i>which apple juice should I get? </i> then you've landed in the right place
+    if you've ever wondered, <i>which apple juice should I get? </i> </p>
+    <p>
+    then you've landed in the right place
   </p>
   <p style="font-size: 15px">maybe idk</p>
 </div>
 
-<div>
   <h2>most recent review</h2>
+<div class="containerMRR">
+  <div>
   <img src="simplyapple.png" alt="an upright bottle of simply apple juice" width="300px">
-  <h3>simply apple</h3>  
+  </div>
+  <div style="padding-top: 20px">
+    <h3>simply apple</h3>  
   <h3>8.5/10</h3>
-  <button class="buttonSeeWhy"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">see why ⁀➷</a></button>
+  <button class="buttonSeeWhy"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">see why ⁀➷</a></button>
+  </div>
   </div>  
   
 <div class="siteFooter">
   <p>pee pee</p>
 </div>
 
+  <script>
+  // Grab the audio element
+  const clickSound = document.getElementById("clickSound");
+
+  // Attach to all links
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      clickSound.currentTime = 0; // rewind to start
+      clickSound.play();
+    });
+  });
+    
+/*
+    Code copied from: https://copilot.microsoft.com/shares/XCX2gkGvA1zHiXkQFXVDo
+Author: Copilot
+Name: Integrating click sound effects
+Description: I wanted to add a slurp sound effect for when links are clicked
+Date retrieved: [date]
+*/
+</script>
 </body>
 </html>
