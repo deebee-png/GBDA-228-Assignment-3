@@ -42,14 +42,17 @@ Date retrieved: [date]
 
   h1 {
     font-family: Oi, Serif;
+    letter-spacing: 3px;
   }  
   h2 {
     font-family: "BBH Sans Hegarty", sans-serif;
     font-size: 30px;
+    letter-spacing: 1px;
   } 
   h3 {
     font-family: "BBH Sans Hegarty", sans-serif;
     font-size: 25px;
+    letter-spacing: 1.3px;
   }
 
   .siteBanner {
@@ -65,10 +68,8 @@ Date retrieved: [date]
     /* Center image */
   }
 
-  .siteNavBar {
-    height: 50px;
-    line-height: 3px;
-    /* Use full width */
+   .siteNavBar {
+    height: 50px; /* Use full width */
     background-color: #3a240c;
     color: #fff6d9;
     padding: 0;
@@ -79,8 +80,13 @@ Date retrieved: [date]
     font-weight: bold;
     font-size: 30px;
     display: flex;
+    letter-spacing: 2px;
+   
     justify-content: center; /* Center the items horizontally */
     align-items: center; /* Center items vertically */
+  height: 100%;              /* makes ul fill the navbar height */
+  margin: 0;                 /* remove default margins */
+  padding: 0;
   }
   .siteNavBar li {
     padding-right: 35px;
@@ -123,8 +129,6 @@ Date retrieved: Nov 25
   .homeText img {
     padding-top: 30px;
   }
-
-  
   
   .containerMRR {
     display: grid;
@@ -137,8 +141,10 @@ Date retrieved: Nov 25
    background-color: #372510;
   color: #FDF6DC;
     text-decoration: none;
-    width: 900px;
-    height: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
     font-family: "BBH Sans Hegarty", sans-serif;
     font-size: 20px;
     border: none;
@@ -152,6 +158,7 @@ Date retrieved: Nov 25
    background-color: #372510;
   color: #FDF6DC;
     text-decoration: none;
+    display: inline-block;
     width: 660px;
     height: 75px;
     top: 50%;
@@ -174,6 +181,7 @@ Date retrieved: Nov 25
     color: #fff6d9;
     padding: 20px 0;
     /* Add padding for content */
+    margin-top: 80px; 
   }
   
 
@@ -194,7 +202,7 @@ Date retrieved: Nov 25
 
 <div class="siteNavBar">
   <ul>
-    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">about</a></li>
+    <li><a href="abt-me.html">about</a></li>
   <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">home</a></li>
   <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">reviews</a></li>
   </ul>
@@ -215,7 +223,8 @@ Date retrieved: Nov 25
 </div>
 
   <h2 style="padding-top: 50px">most recent review</h2>
-<div class="containerMRR">
+
+  <div class="containerMRR">
   <div>
   <img src="simplyapple.png" alt="an upright bottle of simply apple juice" width="300px">
   </div>
@@ -225,6 +234,7 @@ Date retrieved: Nov 25
   <a href="simply-apple-review.html" class="buttonSeeWhy">see why ⁀➷</a>
   </div>
   </div>  
+  
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="buttonSeeAll">see all apple juice reviews ⁀➷</a>
     
   
