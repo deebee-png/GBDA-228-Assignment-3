@@ -38,7 +38,6 @@ Date retrieved: [date]
     /* Use flexbox for layout */
     flex-direction: column;
     /* Stack children vertically */
-    justify-content: center;
   }
 
   h1 {
@@ -137,37 +136,32 @@ Date retrieved: Nov 25
   .buttonSeeWhy {
    background-color: #372510;
   color: #FDF6DC;
-    width: 200px;
-    height: 60px;
+    text-decoration: none;
+    width: 900px;
+    height: 5px;
     font-family: "BBH Sans Hegarty", sans-serif;
     font-size: 20px;
     border: none;
     border-radius: 30px;
   }
-    .buttonSeeWhy a {
-  color: #FDF6DC;
-    text-decoration: none;
-  }
-  .buttonSeeWhy a:hover {
+  .buttonSeeWhy:hover {
   color: #E3655F;
   }
   
   .buttonSeeAll {
    background-color: #372510;
   color: #FDF6DC;
+    text-decoration: none;
     width: 660px;
-    height: 80px;
+    height: 75px;
+    top: 50%;
     font-family: "BBH Sans Hegarty", sans-serif;
     font-size: 30px;
     border: none;
     border-radius: 40px;
-    text-align: center;
+    margin: 0 auto;
   }
-    .buttonSeeAll a {
-  color: #FDF6DC;
-    text-decoration: none;
-  }
-  .buttonSeeAll a:hover {
+  .buttonSeeAll:hover {
   color: #E3655F;
   }
   
@@ -191,6 +185,8 @@ Date retrieved: Nov 25
 
 <body>
   <audio id="clickSound" src="slurp.mp3" preload="auto"></audio>
+
+
   
 <div class="siteBanner">
 <img src="AdobeStock_apple_logo.jpeg" alt="the inside of an apple cut vertically down the middle. the peel is red, there are two seeds and one brown stem. the apple seems to have been drawn with crayon or oil pastels" width="3100">
@@ -204,11 +200,12 @@ Date retrieved: Nov 25
   </ul>
 </div>
 
-  <img src="ac_concert_selfie.png" alt="description of image" width="500px"></img>
-  <div class="centered">☆ WHO aM I? ☆</div>
+<div class="welcomeContainer">
+  <img src="pinterestApples.jpg" alt="description of image" width="500px"></img>
+  <div class="centered">☆ WELCOME ☆</div>
+</div>
 
 <div>
-  <h2>my name is danielle :D</h2>
   <p>
     if you've ever wondered, <i>which apple juice should I get? </i> </p>
     <p>
@@ -216,6 +213,20 @@ Date retrieved: Nov 25
   </p>
   <p style="font-size: 15px">maybe idk</p>
 </div>
+
+  <h2 style="padding-top: 50px">most recent review</h2>
+<div class="containerMRR">
+  <div>
+  <img src="simplyapple.png" alt="an upright bottle of simply apple juice" width="300px">
+  </div>
+  <div style="padding-top: 20px">
+    <h3>simply apple</h3>  
+  <h3>8.5/10</h3>
+  <a href="simply-apple-review.html" class="buttonSeeWhy">see why ⁀➷</a>
+  </div>
+  </div>  
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="buttonSeeAll">see all apple juice reviews ⁀➷</a>
+    
   
 <div class="siteFooter">
   <p>pee pee</p>
